@@ -5,10 +5,16 @@ python:
 
 env:
   global:
-    - FOO=FUBU
+    - APP_NAME=herokunew
+    - secure: tH3gdMjB8jhN6zQ4VAPjvKwhUOwCSSL1zImwjli61TthNM0GGjGSZqyPbfE/5TypouwBIU5s546L7XJWhq9HYRv5EOoxjXPteThQRyUJNo8gwQ0P2BZu30NEDigOt3X6g0oauX6eAVF3w7RN9eiz6kuQjWetSgBuZG0pgUMckomTTdwqKJJQXX/L8jOxUhOlZWGa7/vIBd/m7gCrxE9SoKYwBT+BSELR7It2HsEf2ongpN3CSoxwU3/JhXW3EWjIwsF6Tw34QkHi6iXRPGkWMacg5EP4l2XKQqdhpixAgIcrKBzkjmHTLxeOxz7MCx1fXAsEoE4/Vb5S2caHEjhs1w==
 
   matrix:
     - M1=ONE
+    
+  after_success:
+  - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
+  - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
+  - git push -f heroku master
 
 build:
   pre_ci:
