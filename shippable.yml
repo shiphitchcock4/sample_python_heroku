@@ -10,6 +10,8 @@ env:
     - secure: 5alQf8+1ygUO1L8sTfvdTJ7jPjEpkHk3rcl1D1vBPFj2Y3ol9qNPdUqKuN3L8jEjc8+H0JSi6mHYQYHcVog5gyBcUU368Pu3Rvg+rmOYlHbxw/VlElngoh1dPoaeLK/pv0FrBzBbr9La5cWFQMyzNbrw+T3tZqagFAkaxniG7tigQPku4Skidn38XvZ4mOVgFPrMFVqisoTJuAiuKJ8q5nktEVqEUEG2rKqZl/8/O+TtmD2g1cikWAYTcWNhshS6ci/4JSdU05ELEEnPVQLM2bJUgwZsEaCPk0r6/LoH6RXWB10It4/GD2N+t29n8ULIa/jcZU/YSib2MihUn9W8+Q==
   matrix:
     - M1=ONE
+  after_success:
+    - git push -f git@heroku.com:$APP_NAME.git master
 
 build:
   pre_ci:
