@@ -6,8 +6,9 @@ python:
 env:
   global:
     - FOO=FUBU
-    - APP_NAME=herokusamplepython 
-    - secure: JwSKAdmn+c+plCgDhe0ql0liZtlEntPlbsiR+iScRWYhhCCnkNwZmLbdcTfb/kM91IN2RfGfUpumEKEdJiZjf9nXPm48aDRpcJLT5Phulo/C0zg7DPNlE6nihnVvHy3k2ETaQzAsgaK14so90j6Tz7IHBL2y5ndC0JvaVV0s2piALg65B0Kywppjc+DrfpPYtg2HyFDUpuK6djV+Ib8XtTt6vVBMWqj8hnvvT6U5vAUwCDvc6dfSDi8ah3dmr12qO5scNUJSMvcer9sAxA1G9r9c802NAPfP/uvviEJ0i3CxeFMX0jF+fDpYIrZ6qEprftW7GJWqHFGUOmoBpmaQRdT277ZZvOUCfNVklUT5/UD65B4m9mzQ900ZEjuTx/Eya1GcrVDiO+0JykUxShdlPiQA6C7unwVXbrV8GmXElbvOLcfHGzgQSmiNiLE311PxH/ktaznLbaFOifKCBF58+1h3oBDYQ4JwZ6EflYJtrFLPg2E3rL/YEtgACXitf7hlWtQH8r6X9xaQsO+jgVm7v9t8OgJVM4ONCJDNPVBudxR3kySjfgphuHe0A8apcxyIXHuVOUdhdrb9nhG6T1NTlV2ovKFxqBC4lU+qsUmUGpNVy4SbyPVCWgLBXoVDXmfVgfIimSAkKmge2cfE4aQWyJHf2GHcwPvkQeYysPRgRHI=
+    - APP_NAME=hitchcock4
+    - secure: 0SxPIGCcrLLcV+r8ZNhVHIw3evVzbMkYs7FaAGa6XANHuhKDa34sssnqsBURlLPhkjVvKO4fXs73uQIN/1tOs2r+++f2oC4Q9F4SuFuZizD5pECab3wUAOZTO6eKAsF3FQyEVoC3bTmlUvC1ySa8vnpPlvl1Z8127YLGRMbr6nDuG5XaF2geRoz9pUd/irl03w0iYZDZPakaSZ5BXG/uaNJNyuLgOM/SopJw6TfKZS9XRviOhHvY/lzTGiz7wv1L5yiP7ct5+1OzSDhX3FF00ff4lhCQryzS/ayeySCNB6jHlYuHy3eLPsVxIRxuX30lxgh6A1JGWJ6NbW7iwEM6IQ==
+    
 
   matrix:
     - M1=ONE
