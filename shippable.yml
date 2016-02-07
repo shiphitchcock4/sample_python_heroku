@@ -11,10 +11,6 @@ env:
   matrix:
     - M1=ONE
     
-  after_success:
-  - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
-  - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
-  - git push -f heroku master
 
 build:
   pre_ci:
@@ -29,6 +25,9 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
+    - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
+    - git push -f heroku master
 
   post_ci:
     - docker push shippabledocker/sample_python
@@ -38,7 +37,5 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker
-      branches: 
-        only:
-          - master
+    
    
