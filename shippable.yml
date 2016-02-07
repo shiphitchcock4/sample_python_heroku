@@ -6,7 +6,8 @@ python:
 env:
   global:
     - FOO=FUBU
-    - APP_NAME=heroku222
+    - APP_NAME=herokueithtool
+    - secure: imVVD275cmOCd/zpL6Q4lRdmtidbLyjKl1S95ZAciuH9E2N2Js+vF6tFofwXPO+6Ky6Fo/8pmAsu/7CWynPQIzfyvXm6enhhBdBi8kODeClQFIphmzgj7D0jeq8OugnFIHNZEg5L4oFbSx7f08xIv5cQPLJkyvht20qOY/3zCcDkawDIWrrw+7BCn7E1XtYWOVsY57+GMDgmvlxAcqhOO9wpnVGK6XvGAF4aNGpSxhjZQqtnZoaLBpo2zWEncl0ZkHFzCWdLVsoUwHBGaH2q/zcU4waEMghBJFGpKgg2yMzLuKb7kiIo8MyP+ptWHkMeF/SXdbv6+LaGSKsMf7cckw==
 
 
   matrix:
