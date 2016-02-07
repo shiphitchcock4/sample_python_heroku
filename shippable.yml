@@ -6,9 +6,8 @@ python:
 env:
   global:
     - FOO=FUBU
-    - APP_NAME=herokunew
-    - secure: thZdP8JTo9Gcm+n+K2Yu+y2e1rka7IL/ISggbXAXpQQMWw0PIz33y+4hI10ScnUeGZ6VGuZ3xfuR/3t7PwBwrOGB7b6DStdvkGNfdHQVcVcSK0I/fLz92ArU+yMEXTsuMpuy5BQClkC9n/oZYB+QOIp9VYCKWrqSQK0keF9ObgUKY4OtwuM46+JvWp9EZLaPSU3wX5guk103VR4Le297LY4UofvQVxv//ofvvG/aX+2HrQ0Qmjhx3vQROftmoAKkkZar9GsFsd9G1bVUsxgAfeCTjbwoBpaAbB2Z4aOhZJs99e5g5Z3DEyiOB0FCzE4Eew3me2X3lLGYVURc86dkJw==
-
+    - APP_NAME=herokunew2
+    
   matrix:  
     - M1=ONE
 
@@ -23,12 +22,10 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
-    - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
     - ps -eax
     - ls -al
-    - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
-    - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
-    - git push -f heroku master
+    - git push -f git@heroku.com:$APP_NAME.git master 
+   
 
   post_ci:
     - docker push shippabledocker/hitchcock2_sample_python
