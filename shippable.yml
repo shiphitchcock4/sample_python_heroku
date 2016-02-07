@@ -5,9 +5,9 @@ python:
 
 env:
   global:
-    
-    - APP_NAME=herokutool1
-    - secure: FW2OB1fOsceYFPeo5FzYHxlm1ap7ZLjK4oxVneCxxBP59NdGCRlvFlLb0FgkBEfshULN+A3+kIQsczGPxIX85MBkIgSAw7daV7Hh94LnWGeAuqQ4xqdKmRTqcoRaziGHqCT5n6XreegLRDt7/begey1EOGWkfKUVRtawxDLh9qPrmcZ1DGh3JIuo0k4l+cfsWq4qhL0g0uRP0e9jGFnWbqTQmjhJ1NGuxNV5d6YkshrzJjwI4n2NYmfIOkA73+OTg0tIOkghIndQ/9W/YLesMaO/HckiS/3TkRdYhbo8Z3DE7Ts1LEdCF3B7Gs0pI/m8Dglg9sW0kpmvfqyGfyXMFg==
+    - APP_NAME=herokuwithtool
+    - secure: zUCAeW46DBGyTmnz4H3Ed+SR+xb3Vz3AHXn2AT+eAgTPgB/8vJ6vfsughNhU8Oh5QKbya4gUyPi3AwDfcfLm/fXWSQ1UU4N1gh1/Kz8HOY/ishQ9x3AQwGoI7ql9rT4+5u8vH1cd+sNhEyFaa+EK3rdUcp9JYplh1+TiZ7cNY/Sf45Lqy+i1bwI1JDvyVQHzXxNcjgQ+p7uhQ67og9yFXGwHqpBBVCMoe1nJA0yOvdLTDD9ICp69QzWquGjUDiwGJTSdx9Z2sipACuMoiJRYgRSZvhaEs4mM3kAF0R8yKTF1Axp9wVCkn5zNy1fK1Md3A9n4xWXQFhzZu5g+2uShGg==
+  
     
   after_success:
     - git push -f git@heroku.com:$APP_NAME.git master
