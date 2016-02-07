@@ -5,11 +5,10 @@ python:
 
 env:
   global:
-    - FOO=FUBU
+    
     - APP_NAME=herokutool
-    - secure: 5alQf8+1ygUO1L8sTfvdTJ7jPjEpkHk3rcl1D1vBPFj2Y3ol9qNPdUqKuN3L8jEjc8+H0JSi6mHYQYHcVog5gyBcUU368Pu3Rvg+rmOYlHbxw/VlElngoh1dPoaeLK/pv0FrBzBbr9La5cWFQMyzNbrw+T3tZqagFAkaxniG7tigQPku4Skidn38XvZ4mOVgFPrMFVqisoTJuAiuKJ8q5nktEVqEUEG2rKqZl/8/O+TtmD2g1cikWAYTcWNhshS6ci/4JSdU05ELEEnPVQLM2bJUgwZsEaCPk0r6/LoH6RXWB10It4/GD2N+t29n8ULIa/jcZU/YSib2MihUn9W8+Q==
-  matrix:
-    - M1=ONE
+    - secure: ackX3azgUupB9I1lhTIvXpbC0kLS5HQz+OnZc4oNj80roWCepQibAhU4MEKW2kt0CRep9n1i1y0A38T6EKtphWFzKNhm6bp41J90ttgqLWzBypD3H/0Ua00DhWQgg6Pks8wIieKXE4aAkzFeJExbiTIZqWuXQh0vGLqgS3WJ5wBehc3ELKGn/qIixkzB2z3+QG0h31G5KxIM36eHWdvoYXox58ssxIHlZnncVo1hq7SYMGNvQjDgHjNuPVwcXuI/H1x459LUBDAxG5hE75kOE/ORwrx6LI7FzzKnFTywFZxOF0kCviMyeZWkUISRgAlqkXMhMYuzLuRyhvDPcp5kAA==
+    
   after_success:
     - git push -f git@heroku.com:$APP_NAME.git master
 
