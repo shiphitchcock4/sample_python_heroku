@@ -6,9 +6,8 @@ python:
 env:
   global:
     - FOO=FUBU
-    - APP_NAME=hitckcock41
-    - secure: V0fzk5AC3pwpmUKxvC7neWrX+0I9vN+JcDHw2OuVIcoCvWDS+HmpipkX8GLgnGZGlqB7g7RJqaVmqIr/rXE8EFZOb0L7c0N1gShrXCKMZtJ0BV0HkHX8Xcsl3Pt9hjLPPON7pAffIdNDpS0Z0o4fW7kgj0sXWA5X74Y3T7JYxl81Xsy+liXsw4KQ64R20aA8YeBkpuf6ublTQVd4LnSffc4N51TrQgFrb3nDP8yXWbDp2ETTAHYMqSbbnGzHPMP2/mCJ4m/xvR4UADtsWnfkEqx/U0FTyO5HuyQONRSvX5CJ29i4ljAll3c/e0Oh3uUYV7cj3useO2zHOjhOZU+LOg==
-
+    - APP_NAME=herokutool
+    - secure: 5alQf8+1ygUO1L8sTfvdTJ7jPjEpkHk3rcl1D1vBPFj2Y3ol9qNPdUqKuN3L8jEjc8+H0JSi6mHYQYHcVog5gyBcUU368Pu3Rvg+rmOYlHbxw/VlElngoh1dPoaeLK/pv0FrBzBbr9La5cWFQMyzNbrw+T3tZqagFAkaxniG7tigQPku4Skidn38XvZ4mOVgFPrMFVqisoTJuAiuKJ8q5nktEVqEUEG2rKqZl/8/O+TtmD2g1cikWAYTcWNhshS6ci/4JSdU05ELEEnPVQLM2bJUgwZsEaCPk0r6/LoH6RXWB10It4/GD2N+t29n8ULIa/jcZU/YSib2MihUn9W8+Q==
   matrix:
     - M1=ONE
 
